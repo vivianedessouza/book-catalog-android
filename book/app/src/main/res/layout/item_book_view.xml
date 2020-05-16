@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="120dp"
+    android:layout_height="190dp"
+    android:layout_margin="5dp"
+    cardview:cardCornerRadius="4dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:id="@+id/cardViewItem">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/bookImage"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:scaleType="centerCrop"
+            android:background="@color/imageBackgroundColor"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/bookTitle"
+            android:textSize="13sp"
+            android:textColor="@color/imageBackgroundColor"
+            android:gravity="center"
+            tools:text="Book Title" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
